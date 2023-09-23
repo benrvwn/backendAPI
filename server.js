@@ -5,7 +5,7 @@ const Product = require('./models/productModel');
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send('response to');
+    res.send('response to hahaha');
 });
 
 mongoose.set('strictQuery', false);

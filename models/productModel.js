@@ -3,25 +3,25 @@ const mongoose = require('mongoose');
 const productSchema = mongoose.Schema({
     productName: {
         type: String,
-        require: [true, 'please enter product name']
+        require: true
     },
     productType: {
         type: String,
-        require: [true, 'please enter the type of product']
+        require: true
     },
     productPrice: {
         type: String,
-        require: [true, 'please enter the price']
+        require: true
     },
     productDescription: {
         type: String,
-        require: [true, 'please enter the product description']
+        require: true
     }
 },
     {
-        timestamp: true,
+        timestamp: true
     }
-);
+)
 
 const Product = mongoose.model('Products', productSchema);
 

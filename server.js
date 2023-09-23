@@ -7,6 +7,9 @@ const app = express();
 app.get('/', (req, res) => {
     res.send('response to hahaha');
 });
+app.get('/gagisupot', (req, res) => {
+    res.send('testing kung gumaganaa');
+});
 
 mongoose.set('strictQuery', false);
 mongoose.connect('mongodb+srv://admin:admin@firstcluster.mu3ljeu.mongodb.net/?retryWrites=true&w=majority').then(()=>{
